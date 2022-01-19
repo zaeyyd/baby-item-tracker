@@ -1,8 +1,11 @@
-import { object, string } from "yup";
+import { number, object, string } from "yup";
 
 
 const bodyObject = object({
-    name: string()
+    name: string(),
+    cost: number(),
+    quantity: number()
+
 })
 
 const queryObject = object({
